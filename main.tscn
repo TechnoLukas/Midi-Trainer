@@ -1,0 +1,686 @@
+[gd_scene load_steps=7 format=3 uid="uid://cvam8tvy6ox8l"]
+
+[ext_resource type="PackedScene" uid="uid://c7aj2bpgww8l3" path="res://kye_white.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://beebqy4j7cbxg" path="res://key_black.tscn" id="2"]
+[ext_resource type="PackedScene" uid="uid://dd7kqovq5mfya" path="res://key_empty.tscn" id="3"]
+[ext_resource type="Script" path="res://midiget.gd" id="4"]
+
+[sub_resource type="Shader" id="3"]
+
+[sub_resource type="ShaderMaterial" id="2"]
+render_priority = 0
+shader = SubResource("3")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4")
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color(0.27, 0.27, 0.27, 1)
+
+[node name="keyboard_background" type="ColorRect" parent="."]
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 550.0
+color = Color(0.36, 0.36, 0.36, 1)
+
+[node name="keyboard" type="Control" parent="keyboard_background"]
+anchors_preset = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+
+[node name="key1" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 32.0
+offset_bottom = 150.0
+
+[node name="key3" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 35.0
+offset_right = 67.0
+offset_bottom = 150.0
+
+[node name="key5" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 70.0
+offset_right = 102.0
+offset_bottom = 150.0
+
+[node name="key6" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 105.0
+offset_right = 137.0
+offset_bottom = 150.0
+
+[node name="key8" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 140.0
+offset_right = 172.0
+offset_bottom = 150.0
+
+[node name="key10" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 175.0
+offset_right = 207.0
+offset_bottom = 150.0
+
+[node name="key12" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 210.0
+offset_right = 242.0
+offset_bottom = 150.0
+
+[node name="key13" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 245.0
+offset_right = 277.0
+offset_bottom = 150.0
+
+[node name="key15" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 280.0
+offset_right = 312.0
+offset_bottom = 150.0
+
+[node name="key17" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 315.0
+offset_right = 347.0
+offset_bottom = 150.0
+
+[node name="key18" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 350.0
+offset_right = 382.0
+offset_bottom = 150.0
+
+[node name="key20" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 385.0
+offset_right = 417.0
+offset_bottom = 150.0
+
+[node name="key22" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 420.0
+offset_right = 453.0
+offset_bottom = 150.0
+
+[node name="key24" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 456.0
+offset_right = 488.0
+offset_bottom = 150.0
+
+[node name="key25" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 491.0
+offset_right = 523.0
+offset_bottom = 150.0
+
+[node name="key27" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 526.0
+offset_right = 558.0
+offset_bottom = 150.0
+
+[node name="key29" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 561.0
+offset_right = 593.0
+offset_bottom = 150.0
+
+[node name="key30" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 596.0
+offset_right = 628.0
+offset_bottom = 150.0
+
+[node name="key32" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 631.0
+offset_right = 663.0
+offset_bottom = 150.0
+
+[node name="key34" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 666.0
+offset_right = 698.0
+offset_bottom = 150.0
+
+[node name="key36" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 701.0
+offset_right = 733.0
+offset_bottom = 150.0
+
+[node name="key37" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 736.0
+offset_right = 768.0
+offset_bottom = 150.0
+
+[node name="key39" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 771.0
+offset_right = 803.0
+offset_bottom = 150.0
+
+[node name="key41" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 806.0
+offset_right = 838.0
+offset_bottom = 150.0
+
+[node name="key42" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 841.0
+offset_right = 874.0
+offset_bottom = 150.0
+
+[node name="key44" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 877.0
+offset_right = 909.0
+offset_bottom = 150.0
+
+[node name="key46" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 912.0
+offset_right = 944.0
+offset_bottom = 150.0
+
+[node name="key48" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 947.0
+offset_right = 979.0
+offset_bottom = 150.0
+
+[node name="key49" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 982.0
+offset_right = 1014.0
+offset_bottom = 150.0
+
+[node name="key51" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1017.0
+offset_right = 1049.0
+offset_bottom = 150.0
+
+[node name="key53" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1052.0
+offset_right = 1084.0
+offset_bottom = 150.0
+
+[node name="key54" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1087.0
+offset_right = 1119.0
+offset_bottom = 150.0
+
+[node name="key56" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1122.0
+offset_right = 1154.0
+offset_bottom = 150.0
+
+[node name="key58" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1157.0
+offset_right = 1189.0
+offset_bottom = 150.0
+
+[node name="key60" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1192.0
+offset_right = 1224.0
+offset_bottom = 150.0
+
+[node name="key61" parent="keyboard_background/keyboard" instance=ExtResource("1")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1227.0
+offset_right = 1260.0
+offset_bottom = 150.0
+
+[node name="key2" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 17.0
+offset_right = 49.0
+offset_bottom = 80.0
+
+[node name="key4" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 52.0
+offset_right = 84.0
+offset_bottom = 80.0
+
+[node name="keyempty1" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 87.0
+offset_right = 119.0
+offset_bottom = 80.0
+
+[node name="key7" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 122.0
+offset_right = 154.0
+offset_bottom = 80.0
+
+[node name="key9" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 157.0
+offset_right = 189.0
+offset_bottom = 80.0
+
+[node name="key11" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 192.0
+offset_right = 224.0
+offset_bottom = 80.0
+
+[node name="keyempty2" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 227.0
+offset_right = 259.0
+offset_bottom = 80.0
+
+[node name="key14" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 262.0
+offset_right = 294.0
+offset_bottom = 80.0
+
+[node name="key16" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 297.0
+offset_right = 329.0
+offset_bottom = 80.0
+
+[node name="keyempty6" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 332.0
+offset_right = 364.0
+offset_bottom = 80.0
+
+[node name="key19" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 367.0
+offset_right = 399.0
+offset_bottom = 80.0
+
+[node name="key21" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 402.0
+offset_right = 434.0
+offset_bottom = 80.0
+
+[node name="key23" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 437.0
+offset_right = 470.0
+offset_bottom = 80.0
+
+[node name="keyempty11" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 473.0
+offset_right = 505.0
+offset_bottom = 80.0
+
+[node name="key26" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 508.0
+offset_right = 540.0
+offset_bottom = 80.0
+
+[node name="key28" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 543.0
+offset_right = 575.0
+offset_bottom = 80.0
+
+[node name="keyempty7" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 578.0
+offset_right = 610.0
+offset_bottom = 80.0
+
+[node name="key31" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 613.0
+offset_right = 645.0
+offset_bottom = 80.0
+
+[node name="key33" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 648.0
+offset_right = 680.0
+offset_bottom = 80.0
+
+[node name="key35" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 683.0
+offset_right = 715.0
+offset_bottom = 80.0
+
+[node name="keyempty10" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 718.0
+offset_right = 750.0
+offset_bottom = 80.0
+
+[node name="key38" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 753.0
+offset_right = 785.0
+offset_bottom = 80.0
+
+[node name="key40" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 788.0
+offset_right = 820.0
+offset_bottom = 80.0
+
+[node name="keyempty9" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 823.0
+offset_right = 855.0
+offset_bottom = 80.0
+
+[node name="key43" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+material = SubResource("2")
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 858.0
+offset_right = 891.0
+offset_bottom = 80.0
+
+[node name="key45" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 894.0
+offset_right = 926.0
+offset_bottom = 80.0
+
+[node name="key47" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 929.0
+offset_right = 961.0
+offset_bottom = 80.0
+
+[node name="keyempty8" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 964.0
+offset_right = 996.0
+offset_bottom = 80.0
+
+[node name="key50" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 999.0
+offset_right = 1031.0
+offset_bottom = 80.0
+
+[node name="key52" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1034.0
+offset_right = 1066.0
+offset_bottom = 80.0
+
+[node name="keyempty5" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1069.0
+offset_right = 1101.0
+offset_bottom = 80.0
+
+[node name="key55" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1104.0
+offset_right = 1136.0
+offset_bottom = 80.0
+
+[node name="key57" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1139.0
+offset_right = 1171.0
+offset_bottom = 80.0
+
+[node name="key59" parent="keyboard_background/keyboard" instance=ExtResource("2")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1174.0
+offset_right = 1206.0
+offset_bottom = 80.0
+
+[node name="keyempty3" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1209.0
+offset_right = 1241.0
+offset_bottom = 80.0
+
+[node name="keyempty4" parent="keyboard_background/keyboard" instance=ExtResource("3")]
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1244.0
+offset_right = 1277.0
+offset_bottom = 80.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 303.0
+offset_bottom = 106.0
+text = "text"

@@ -1,0 +1,11 @@
+bdbec74c6e5bd72edee867077d70896c
+::res://::1680950099
+default_env.tres::Environment::5094814666315567684::1680950071::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1680949991::0::1::::<><>::
+icon.png::CompressedTexture2D::3139090524564355900::1680807083::1680948383::1::::<><>::
+key_black.tscn::PackedScene::2675524164768208136::1680949889::0::1::::<><>::
+key_empty.tscn::PackedScene::7436525181288785988::1680949889::0::1::::<><>::
+kye_white.tscn::PackedScene::7019479109171900326::1680950071::0::1::::<><>::
+main.tscn::PackedScene::6247595650413941353::1680949889::0::1::::<><>::uid://c7aj2bpgww8l3<>uid://beebqy4j7cbxg<>uid://dd7kqovq5mfya<>res://midiget.gd
+midiget.gd::GDScript::-1::1680948847::0::1::::<>Control<>::
+pressedM.tres::ShaderMaterial::6030463335104417020::1680949887::0::1::::<><>::
